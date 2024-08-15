@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Landing Page</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            height: 100vh;
+            width: 100%;
+            background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(img1.avif);
+            background-size: cover;
+            
+        }
+        nav{
+            height: 100px;
+            width: 100%;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .Logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+        }
+        .Menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .Menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid indianred;
+            transition: 0.4s linear;
+        }
+        .Menu a:hover:before{
+            width: 90%;
+        }
+        .Register a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: indianred;
+            border-radius:8px ; 
+            transition: 0.4s;  
+        }
+        .Register a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+        .main{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: white;
+        }
+        .main span{
+            letter-spacing: 5px;
+        }
+        .main h1{
+            font-size: 3.6em;
+        }
+        .main a{
+            text-decoration: none;
+            background: indianred;
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 5px;
+            transition: 0.4s;
+        }
+        .main a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+        .container
+        {
+            height: 900px;
+            width: 90%;
+            
+            margin: 80px;
+            padding: 80px;
+       }
+        .one
+        {
+            height: 300px;
+            width: 40%;
+            border: 1px solid black;
+            float: left;
+            box-shadow: 5px 8px 8px gray;
+        }
+        .two
+        {
+            height: 300px;
+            width: 40%;
+            border: 1px solid black;
+            float: right;
+            box-shadow: 5px 8px 8px gray;
+        }
+        .three
+        {
+            height: 300px;
+            width: 40%;
+            border: 1px solid black;
+            float: left;
+            margin-top: 40px;
+            box-shadow: 5px 8px 8px gray;
+        }
+        .four
+        {
+            height: 300px;
+            width: 40%;
+            border: 1px solid black;
+            float: right;
+            margin-top: 40px;
+            box-shadow: 5px 8px 8px gray;
+        }
+        .l1
+        {
+            height: 300px;
+            width: 50%;
+            background-image: url(img2.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            float: left;
+        }
+        .l2
+        {
+            height: 300px;
+            width: 50%;
+            background-image: url(img3.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            float: left;
+        }
+        .l3
+        {
+            height: 300px;
+            width: 50%;
+            background-image: url(img6.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            float: left;
+        }
+        .l4
+        {
+            height: 300px;
+            width: 50%;
+            background-image: url(img5.avif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            float: left;
+        }
+        .r1
+        {
+           height: 300px;
+           width: 40%;
+           float: left;
+           font-size: 15px;
+           margin: 10px; 
+        }
+        .r2
+        {
+           height: 300px;
+           width: 40%;
+           float: left;
+           font-size: 15px;
+           margin: 10px; 
+        }
+        .r3
+        {
+           height: 300px;
+           width: 40%;
+           float: left;
+           font-size: 15px;
+           margin: 10px; 
+        }
+        .r4
+        {
+           height: 300px;
+           width: 40%;
+           float: left;
+           font-size: 15px;
+           margin: 10px; 
+        }
+        input 
+        {
+            background-color: blue;
+            line-height: 30px;
+            color: white;
+            box-shadow: 2px 4px 4px gray;
+        }
+        input:hover
+        {
+          font-size: 15px;
+          background-color: orangered; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="Logo" style="color: orangered;">
+                Inspiring <br> Excellence
+            </div>
+            <div class="Menu">
+                <a href="#">Home</a>
+                <a href="#">Best Offers</a>
+                <a href="#">About us</a>
+                <a href="#">Our Sites</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="Register">
+                <a href="login_page.html">Sign in ></a>
+            </div>
+        </nav>
+        <section class="main">
+            <span>Ready to unlock true potential? Train your brain</span>
+            <h1>Where the Mind Goes Everything Follows</h1>
+
+            <br>
+            <!-- <a href="#">Book your Trip</a> -->
+        </section>
+    </header>
+    <div class="container">
+        <h1 style="text-align: center;"> What We Do</h1>
+        <div class="one">
+            <div class="l1"></div>
+            <div class="r1">
+                <h3>Business Coaching</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam doloremque similique nulla quidem! Nam nemo 
+                    reiciendis, pariatur, minus dolorum omnis porro doloribus quos ipsa beatae delectus suscipit voluptas, molestias
+                     dolorem.</p><br>
+                 <input type="text" value="Schedule demo>">
+            </div>
+        </div>
+        <div class="two">
+            <div class="l2"></div>
+            <div class="r2">
+                <h3>Performance</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem consequatur in tempore praesentium, exercitationem eveniet neque, doloremque consectetur porro vero sint iusto fuga voluptates provident sapiente nam fugit! Quaerat, nulla!</p><br>
+                <input type="text" value="Schedule demo>">
+            </div>
+        </div>
+        <div class="three">
+            <div class="l3"></div>
+            <div class="r3">
+                <h3>Youth</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur non eaque quis, reiciendis placeat, sequi asperiores odit nobis qui sed quisquam possimus molestiae facere, dolores quam eum numquam sapiente voluptate.</p><br>
+                <input type="text" value="Schedule demo>">
+            </div>
+        </div>
+        <div class="four">
+            <div class="l4"></div>
+            <div class="r4">
+                <h3>Team</h3><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia eveniet magni ab porro ex, voluptas officia reprehenderit debitis corporis nisi consequatur molestiae qui deleniti culpa aperiam id ipsa quasi. Quo?</p><br>
+                <input type="text" value="Schedule demo>">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

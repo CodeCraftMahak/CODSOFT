@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahak-- Developer Portfolio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1
+               ,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,
+               300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: white; 
+            color: black;
+            font: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color:limegreen;
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(152, 152, 199);
+            font-size: 25px;
+        }
+
+        main hr {
+            border: 0;
+            background: limegreen;
+            height: 1.2px;
+            margin: 60px 80px;
+        }
+
+
+
+
+        .left {
+            font-size: 1.5rem;
+        }
+        .right
+        {
+            font-size: 1.8rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+
+            font-size: 2.2rem;
+
+
+        }
+
+        .leftSection .buttons{
+            padding: 5px;
+        }
+        .leftSection .btn {
+
+
+            margin: 23px 0;
+            padding:14px ;
+            background-color:limegreen;
+            color:white;
+            font-size: 18px;
+            border: 2px solid white;
+            border-radius: 6px;
+            cursor: pointer;
+
+
+        }
+        .leftSection .btn:hover
+        {
+            background-color: rgb(125, 125, 244);
+        }
+
+
+        .rightSection img {
+            width: 90%;
+            height: 50%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: limegreen;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: limegreen;
+            ;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .thirdsection
+        {
+            max-width: 80vw;
+            margin: auto;
+            height: 30vh;
+            font-size: 27px;
+        }
+        
+        .secondSection .box {
+            background: rgb(189, 33, 33);
+            width: 82vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: rgb(236, 28, 28);
+            margin: 0 111px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+
+
+        }
+        .vertical-title:hover
+        {
+            font-size: 20px;
+            color: blue;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: rgb(24, 24, 24);
+            width: 150px;
+            font-size: 9px;
+
+        }
+        .vertical-desc:hover
+        {
+            font-size: 10px;
+            color: rgb(112, 168, 231);
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+        footer{
+            background-color: lime;
+            height: 200px;
+        }
+        .footer{
+            display: flex;
+            padding: 13px 120px;
+            /* justify-content: space-evenly; */
+        }
+        .footer ul{
+            list-style: none;
+            font-size: 20px;
+        }
+        .footer >div{
+            width: 90px;
+        
+        }
+       .footer-second
+        {
+            font-size: 50px;
+        }
+        .footer-third
+        {
+            float: right;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color:rgb(250, 243, 243);
+            padding: 10px 0;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            
+            <div class="left">
+                <ul>
+                    <li><a href="/">Home</a></li>
+
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Contact Me</a></li>
+
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Services</a></li>
+                </ul>
+            </div>
+            <div class="right"> Mahak's Portfolio</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="rightSection">
+                <img src="dvlpr.jpg" alt="">
+            </div>
+            <div class="leftSection">
+                Hi, There <br>I'm  <span class="purple"> Mahak</span>
+                <div>& I am a passionate </div>
+
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn"> VisitGitHub</button>
+
+                </div>
+
+            </div>
+            
+
+
+        </section>
+        <hr>
+        <section class="thirdsection">
+            <h1>About me:</h1><br>
+            <p>Hi, I'm Mahak Yadav, a passionate developer with expertise in  full-stack development.
+                 I enjoy crafting efficient, user-friendly software 
+                 using modern technologies like React, Node.js, Python.
+                  With a background in computer science, 
+                  I'm driven by curiosity and a love for solving complex problems. Let's connect
+                   and create something amazing together!</p>
+        </section>
+
+        <hr>
+        <section class="secondSection">
+            <!-- <span class="text-gray">What I have done so far</span> -->
+
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        Node.js Developer (2018-2020)
+                    </div>
+                    <div class="vertical-desc">
+
+                        Node.js is a JavaScript runtime built on Chrome's V8 engine. It allows you to run JavaScript on the server side, enabling the development of scalable network applications. Node.js is known for its non-blocking, event-driven architecture, 
+                        which makes it efficient and suitable for real-time applications.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="nodejs.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer (2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+
+                        HTML (HyperText Markup Language) structures web pages using elements and tags. It's easy to learn, 
+                        works with CSS and JavaScript, and is compatible with all browsers.
+                    </div>
+                    
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="javascript.png" alt="">
+                    <div class="vertical-title">
+                        Java Script Developer (2022-2023)
+                    </div>
+                    <div class="vertical-desc">
+
+                        javaScript is a versatile, high-level programming language commonly used in web development to create interactive and dynamic web pages. It runs in web browsers and allows developers to implement complex features such as animations, 
+                        form validations, and asynchronous content updates.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="react.png" alt="">
+                    <div class="vertical-title">
+                        React.js Developer (2024)
+                    </div>
+                    <div class="vertical-desc">
+
+                        React.js is a popular JavaScript library for building user interfaces, particularly single-page applications.
+                         Developed by Facebook, it allows developers to create reusable UI components 
+                         and manage the state of applications efficiently.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="mongodb.png" alt="">
+                    <div class="vertical-title">
+                       MySql Developer (2024)
+                    </div>
+                    <div class="vertical-desc">
+
+                        MySQL is an open-source relational database management system (RDBMS). 
+                        It uses Structured Query Language (SQL) for accessing, managing, 
+                        and manipulating data stored in tables.
+                    </div>
+                </div>
+            </div>
+       </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer">
+            <div class="footer-first"></div>
+             <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Services</li>
+                </ul>
+            <div class="footer-second" ></div>
+        Crafted with care by Mahak | Let's create something extraordinary together
+        <div class="footer-third"></div>
+            <h3>Contact Us  :</h3>
+            <div style="font-size: 30px;">&#128172 &#128222</div>705946943
+        
+    </div>
+        <div class="footer-rights">
+            WWW.mahaksportfolio.com | All rights reserverd
+        </div>
+    
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'cooking', 'Web Designer', 'Graphics Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
